@@ -34,7 +34,7 @@ def genRandomReals (pList, pCount):
 #        It takes a list as a parameter and returns an integer.
 def countAbovePi(pList):
     numberabovepi = 0
-    for item in myList:
+    for item in pList:
         if item > PI:
             numberabovepi += 1
     return numberabovepi
@@ -45,8 +45,8 @@ def findMean(pList):
     total = 0
     for item in pList:
         total += item
-    meantotal = total/len(myList)
-    return meantotal
+    mean = total/len(pList)
+    return mean
 
 # ------------------------------------------------------------
 # Main program
